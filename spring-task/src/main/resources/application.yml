@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: helloWorld
+  # 数据源
+  datasource:
+    hikari:
+      username:
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+      minimum-idle: 5
+      maximum-pool-size: 20
+    url: jdbc:mysql://:3306/bigdata?useUnicode=true&useSSL=true&characterEncoding=utf-8&allowMultiQueries=true
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          task: DEBUG
