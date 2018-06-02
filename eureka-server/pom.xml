@@ -12,13 +12,18 @@
     <artifactId>eureka-server</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-netflix-eureka-server -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>2.0.0.RC2</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
