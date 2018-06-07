@@ -1,6 +1,6 @@
 spring:
   application:
-    name: helloWorld
+    name: task-client
   # 数据源
   datasource:
     hikari:
@@ -16,3 +16,5 @@ logging:
       springframework:
         cloud:
           task: DEBUG
+server:
+  port: 8093
