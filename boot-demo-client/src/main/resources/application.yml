@@ -1,0 +1,35 @@
+server:
+  port: 8094
+# 运用名
+spring:
+  application:
+    name: boot-demo-client
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://172.25.39.18:3306/bigdata?useUnicode=true&useSSL=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: bigdata
+      password: bigdata0204
+      maximum-pool-size: 20
+      max-lifetime: 1800000
+      idle-timeout: 30000
+      connection-timeout: 30000
+  # redis 配置
+  redis:
+    host: 172.25.32.182:7000
+    lettuce:
+      pool:
+        max-active: 200
+        max-wait: 2000
+        min-idle: 10
+        max-idle: 200
+# mybatis 配置文件
+mybatis:
+  config-location: classpath:/mybatis-config.xml
+  mapper-locations: classpath:/mapper/*.xml
+
+# 服务注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.25.33.1:30610/eureka/,http://172.25.33.1:30614/eureka/
