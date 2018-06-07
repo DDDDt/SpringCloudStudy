@@ -16,6 +16,6 @@ public interface BaseIter {
      * @param map
      * @return
      */
-    public List<BrandOpenHotelNum> selBrandOpenHotelNum(Map<String, Object> map);
+    List<BrandOpenHotelNum> selBrandOpenHotelNum(Map<String, Object> map);
 
 }

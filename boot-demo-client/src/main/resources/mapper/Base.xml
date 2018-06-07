@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.wehotel.yxt.dataInter.BaseIter">
-    <select id="selBrandOpenHotelNum" parameterType="java.util.Map" resultType="com.wehotel.yxt.dataInter.BrandIter">
+<mapper namespace="com.dt.demo.dataInter.BaseIter">
+    <select id="selBrandOpenHotelNum" parameterType="java.util.Map" resultType="com.dt.demo.domain.BrandOpenHotelNum">
         SELECT ID id,BRAND_CODE brandCode,SITE_ID siteId,NUM num,UPDATE_TIME updateTime,CREATE_TIME createTime FROM MS_EST_WH_BRAND_OPEN_HOTEL_NUM
         <where>
             SITE_ID = #{siteId}
