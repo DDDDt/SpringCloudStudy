@@ -13,6 +13,7 @@
 
     <dependencies>
 
+        <!--这是Spring Boot的核心启动器，包含了自动配置、日志和YAML。一定要加 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
