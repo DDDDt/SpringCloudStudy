@@ -4,27 +4,27 @@ server:
 spring:
   application:
     name: boot-demo-client
+  datasource:
+      url: jdbc:mysql://:3306/bigdata?useUnicode=true&useSSL=true&characterEncoding=utf-8&allowMultiQueries=true
+      driver-class-name: com.mysql.jdbc.Driver
+      username:
+      password:
+      type: com.zaxxer.hikari.HikariDataSource
+      hikari:
+        minimum-idle: 5
+        maximum-pool-size: 20
+        max-lifetime: 1800000
+        connection-timeout: 30000
   # redis 配置
   redis:
-    host: 172.25.33.147
-    port: 6379
+    host:
+    port:
     lettuce:
       pool:
         max-active: 200
         max-wait: 2000
         min-idle: 10
         max-idle: 200
-  datasource:
-    url: jdbc:mysql://172.25.39.18:3306/bigdata?useUnicode=true&useSSL=true&characterEncoding=utf-8&allowMultiQueries=true
-    driver-class-name: com.mysql.jdbc.Driver
-    username: bigdata
-    password: bigdata0204
-    type: com.zaxxer.hikari.HikariDataSource
-    hikari:
-      minimum-idle: 5
-      maximum-pool-size: 20
-      max-lifetime: 1800000
-      connection-timeout: 30000
 # mybatis 配置文件
 mybatis:
   config-location: classpath:/mybatis-config.xml
