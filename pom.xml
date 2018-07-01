@@ -15,6 +15,7 @@
         <module>eureka-ribbon-client</module>
         <module>eureka-feign-client</module>
         <module>boot-demo-client</module>
+        <module>spring-zuul-server</module>
     </modules>
     <!-- Inherit defaults from Spring Boot -->
     <parent>
