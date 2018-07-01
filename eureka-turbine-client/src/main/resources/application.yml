@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: turbine-client
+server:
+  port: 8093
+
+# 监控的集群 默认
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config-list: [feign-client,ribbon-client]
+  cluster-name-expression: new String("default")
+# 注册中心的地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+

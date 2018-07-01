@@ -13,7 +13,7 @@
 
     <dependencies>
 
-        <!--减控和管理运用程序 -->
+        <!--检控和管理运用程序 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
