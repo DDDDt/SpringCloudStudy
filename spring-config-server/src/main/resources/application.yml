@@ -1,0 +1,17 @@
+server:
+  port: 8094
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+  profiles:
+    active: native
+# 配置文件也注册给注册中心，同意管理
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
