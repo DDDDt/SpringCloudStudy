@@ -16,6 +16,8 @@
         <module>eureka-feign-client</module>
         <module>boot-demo-client</module>
         <module>spring-zuul-server</module>
+        <module>spring-config-server</module>
+        <module>spring-config-client</module>
     </modules>
     <!-- Inherit defaults from Spring Boot -->
     <parent>
