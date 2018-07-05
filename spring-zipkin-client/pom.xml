@@ -9,16 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-zuul-server</artifactId>
+    <artifactId>spring-zipkin-client</artifactId>
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -26,15 +24,6 @@
             <version>2.0.0.RC2</version>
         </dependency>
 
-        <!--路由网关 -->
-        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-zuul -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-            <version>2.0.0.RC2</version>
-        </dependency>
-
-        <!--链路追踪 -->
         <!--zipkin -->
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-zipkin -->
         <dependency>
@@ -42,6 +31,7 @@
             <artifactId>spring-cloud-starter-zipkin</artifactId>
             <version>2.0.0.RC2</version>
         </dependency>
+
 
     </dependencies>
 

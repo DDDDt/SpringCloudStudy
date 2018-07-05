@@ -18,6 +18,8 @@
         <module>spring-zuul-server</module>
         <module>spring-config-server</module>
         <module>spring-config-client</module>
+        <module>spring-zipkin-server</module>
+        <module>spring-zipkin-client</module>
     </modules>
     <!-- Inherit defaults from Spring Boot -->
     <parent>

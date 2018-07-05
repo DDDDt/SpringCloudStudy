@@ -3,6 +3,13 @@ server:
 spring:
   application:
     name: zuul-client
+  zipkin:
+    # 链路追踪服务地址
+    base-url: http://localhost:8096
+  # 百分之百将链路的数据传给 zipkin
+  sleuth:
+    sampler:
+      probability: 1
 
 #服务注册中心
 eureka:
@@ -14,12 +21,11 @@ zuul:
   routes:
     hello:
       # /** 是可以将所有的请求都可以过滤到该服务提供上 , 如果过滤具体的其他实例可以更改这个地址
-      path: /**
-      serviceId: eureka-client
+      path: /zipkin/**
+      serviceId: zipkin-client
   #版本号
   prefix: /v1
 
-# 自己维护注册信息，不想 eureka-server获取注册信息
 
 
 

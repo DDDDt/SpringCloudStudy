@@ -1,0 +1,17 @@
+server:
+  port: 8097
+spring:
+  application:
+    name: zipkin-client
+  zipkin:
+  # zipkin 的地址
+    base-url: http://localhost:8096
+  # 百分百的概率将链路的数据传给zipkin
+  sleuth:
+    sampler:
+      probability: 1
+# 注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
