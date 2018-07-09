@@ -1,0 +1,28 @@
+server:
+  port: 8098
+spring:
+  application:
+    name: admin-server
+  boot:
+    admin:
+      turbine:
+        clusters: [default]
+        location: service-turbine
+      probed-endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    metadata-map:
+      user.name: admin
+      user.password: 123456
+# 关闭安全认证
+management:
+  security:
+    enabled: false
+# 日志保存地址
+logging:
+  file: "./logs/log.log"
+
+

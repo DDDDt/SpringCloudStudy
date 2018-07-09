@@ -12,3 +12,9 @@ eureka:
 feign:
   hystrix:
     enabled: true
+#关闭验证
+management:
+  security:
+    enabled: false
+logging:
+  file: "./logs/feign-client.log"

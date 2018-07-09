@@ -1,17 +1,14 @@
 server:
-  port: 8091
+  port: 8099
 spring:
   application:
-    name: ribbon-client
+    name: admin-client
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8080/eureka/
-
-# 关闭验证功能
+logging:
+  file: "./logs/client-log.log"
 management:
   security:
     enabled: false
-logging:
-  file: "./logs/ribbon-client.log"
-

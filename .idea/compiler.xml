@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="adminclient" />
+        <module name="adminserver" />
+        <module name="boot-demo-client" />
+        <module name="eureka-turbine-client" />
+        <module name="eurekaclient" />
+        <module name="eurekafeignclient" />
+        <module name="eurekaribbonclient" />
+        <module name="spring-task" />
+        <module name="springconfigclient" />
+        <module name="springconfigserver" />
+        <module name="springzipkinclient" />
+        <module name="springzipkinserver" />
+        <module name="springzuulserver" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
