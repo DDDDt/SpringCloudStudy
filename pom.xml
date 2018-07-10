@@ -22,6 +22,7 @@
         <module>spring-zipkin-client</module>
         <module>admin-server</module>
         <module>admin-client</module>
+        <module>spring-security-server</module>
     </modules>
     <!-- Inherit defaults from Spring Boot -->
     <parent>
