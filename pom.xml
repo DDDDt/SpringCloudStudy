@@ -24,6 +24,7 @@
         <module>admin-client</module>
         <module>spring-security-server</module>
         <module>eureka-turbine-client</module>
+        <module>spring-oauth-server</module>
 
     </modules>
     <!-- Inherit defaults from Spring Boot -->
