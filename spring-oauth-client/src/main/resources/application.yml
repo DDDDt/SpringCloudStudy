@@ -1,0 +1,17 @@
+server:
+  port: 8012
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          clientId: service-hi
+          clientSecret: 123456
+          accessTokenUri: http://localhost:8011/oauth/token
+          grant-type: client_credentials,password
+          scope: server
+        provider: http://localhost:8011/users/current
