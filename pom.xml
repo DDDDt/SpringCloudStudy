@@ -26,6 +26,8 @@
         <module>eureka-turbine-client</module>
         <module>spring-oauth-server</module>
         <module>spring-oauth-clent</module>
+        <module>spring-oauth-jwt-server</module>
+        <module>spring-oauth-jwt-client</module>
 
     </modules>
     <!-- Inherit defaults from Spring Boot -->
