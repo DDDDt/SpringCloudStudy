@@ -1,8 +1,9 @@
 package com.oauth.jwt.server.dao.imp;
 
-import com.oauth.server.dao.UserDao;
-import com.oauth.server.domain.Role;
-import com.oauth.server.domain.User;
+
+import com.oauth.jwt.server.dao.UserDao;
+import com.oauth.jwt.server.domain.Role;
+import com.oauth.jwt.server.domain.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;

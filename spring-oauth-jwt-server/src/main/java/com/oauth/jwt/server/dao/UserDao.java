@@ -1,6 +1,7 @@
 package com.oauth.jwt.server.dao;
 
-import com.oauth.server.domain.User;
+
+import com.oauth.jwt.server.domain.User;
 
 /**
  * Create by dt on 2018/7/16
