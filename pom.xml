@@ -25,7 +25,7 @@
         <module>spring-security-server</module>
         <module>eureka-turbine-client</module>
         <module>spring-oauth-server</module>
-        <module>spring-oauth-clent</module>
+        <module>spring-oauth-client</module>
         <module>spring-oauth-jwt-server</module>
         <module>spring-oauth-jwt-client</module>
 
