@@ -36,7 +36,7 @@ public class Oauth2AuthorizationConfig extends AuthorizationServerConfigurerAdap
     }
 
     public TokenStore tokenStore(){
-        return new JwkTokenStore(jwtAccessTokenConverter());
+        return new JwkTokenStore("",jwtAccessTokenConverter());
     }
 
     public JwtAccessTokenConverter jwtAccessTokenConverter(){
