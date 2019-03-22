@@ -28,6 +28,7 @@
         <module>spring-oauth-client</module>
         <module>spring-oauth-jwt-server</module>
         <module>spring-oauth-jwt-client</module>
+        <module>spring-webflux-server</module>
 
     </modules>
     <!-- Inherit defaults from Spring Boot -->
