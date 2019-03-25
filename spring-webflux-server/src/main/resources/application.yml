@@ -1,0 +1,9 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: webflux-server
+  data:
+    mongodb:
+      uri: mongodb:/username:password@ip/admin
+      database: flux-test
